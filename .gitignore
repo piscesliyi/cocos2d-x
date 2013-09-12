@@ -11,3 +11,8 @@
 *.lai
 *.la
 *.a
+
+# Exclude user-specific XCode 3 and 4 files
+*.xcworkspace
+*.xcuserstate
+*.DS_STORE
