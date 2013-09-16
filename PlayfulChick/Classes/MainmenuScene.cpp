@@ -12,6 +12,7 @@
 #include "Tools.h"
 #include "VisibleRect.h"
 #include "SimpleAudioEngine.h"
+#include "GamemodeScene.h"
 
 CCScene* MainmenuScene::createScene()
 {
@@ -88,7 +89,9 @@ bool MainmenuScene::init()
 
 void MainmenuScene::clickStartBtn(CCObject* pSender)
 {
-    
+    CCScene* modeScene = GamemodeScene::createScene();
+    CCTransitionScene *trans = CCTransitionFade::create(1, modeScene);
+    CCDirector::sharedDirector()->replaceScene(trans);
 }
 
 void MainmenuScene::clickSoundBtn(CCObject* pSender)

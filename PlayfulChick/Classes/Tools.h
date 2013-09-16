@@ -16,6 +16,7 @@ class Tools
 {
 public:
     static bool m_bSoundOn;
+    static int m_iModeScores[3];
     
 public:
     static CCPoint getFinalPosition(CCPoint point);

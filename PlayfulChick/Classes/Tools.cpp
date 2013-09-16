@@ -11,6 +11,7 @@
 #include "VisibleRect.h"
 
 bool Tools::m_bSoundOn = true;
+int  Tools::m_iModeScores[3] = {0};
 
 CCPoint Tools::getFinalPosition(CCPoint point)
 {

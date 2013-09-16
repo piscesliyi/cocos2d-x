@@ -208,6 +208,11 @@
 		6E43CB9C17E6A1FC009F0D91 /* menu_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E43CB9917E6A1FC009F0D91 /* menu_start.png */; };
 		6E43CBA017E6B220009F0D91 /* Tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E43CB9E17E6B220009F0D91 /* Tools.cpp */; };
 		6E43CBA317E6F076009F0D91 /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6E43CBA217E6F076009F0D91 /* background.mp3 */; };
+		6E43CBAC17E6FF94009F0D91 /* btn_return.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E43CBA917E6FF94009F0D91 /* btn_return.png */; };
+		6E43CBAD17E6FF94009F0D91 /* mode_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E43CBAA17E6FF94009F0D91 /* mode_bg.png */; };
+		6E43CBAE17E6FF94009F0D91 /* mode_star.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E43CBAB17E6FF94009F0D91 /* mode_star.png */; };
+		6E43CBB117E6FFBA009F0D91 /* game_loadbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E43CBB017E6FFBA009F0D91 /* game_loadbg.png */; };
+		6E43CBB417E6FFFB009F0D91 /* GamemodeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E43CBB217E6FFFB009F0D91 /* GamemodeScene.cpp */; };
 		6E9BB04117E2A93400709909 /* MainmenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E9BB03F17E2A93400709909 /* MainmenuScene.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
@@ -649,6 +654,12 @@
 		6E43CB9E17E6B220009F0D91 /* Tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tools.cpp; path = ../Classes/Tools.cpp; sourceTree = "<group>"; };
 		6E43CB9F17E6B220009F0D91 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tools.h; path = ../Classes/Tools.h; sourceTree = "<group>"; };
 		6E43CBA217E6F076009F0D91 /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
+		6E43CBA917E6FF94009F0D91 /* btn_return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_return.png; sourceTree = "<group>"; };
+		6E43CBAA17E6FF94009F0D91 /* mode_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mode_bg.png; sourceTree = "<group>"; };
+		6E43CBAB17E6FF94009F0D91 /* mode_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mode_star.png; sourceTree = "<group>"; };
+		6E43CBB017E6FFBA009F0D91 /* game_loadbg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = game_loadbg.png; sourceTree = "<group>"; };
+		6E43CBB217E6FFFB009F0D91 /* GamemodeScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GamemodeScene.cpp; path = ../Classes/GamemodeScene.cpp; sourceTree = "<group>"; };
+		6E43CBB317E6FFFB009F0D91 /* GamemodeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamemodeScene.h; path = ../Classes/GamemodeScene.h; sourceTree = "<group>"; };
 		6E9BB03F17E2A93400709909 /* MainmenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainmenuScene.cpp; path = ../Classes/MainmenuScene.cpp; sourceTree = "<group>"; };
 		6E9BB04017E2A93400709909 /* MainmenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainmenuScene.h; path = ../Classes/MainmenuScene.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -1187,10 +1198,12 @@
 				6E116EC117E1C1C20022B973 /* VisibleRect.cpp */,
 				6E116EC217E1C1C20022B973 /* VisibleRect.h */,
 				6E116EC017E1C09C0022B973 /* Constant.h */,
-				6E9BB03F17E2A93400709909 /* MainmenuScene.cpp */,
-				6E9BB04017E2A93400709909 /* MainmenuScene.h */,
 				6E43CB9E17E6B220009F0D91 /* Tools.cpp */,
 				6E43CB9F17E6B220009F0D91 /* Tools.h */,
+				6E9BB03F17E2A93400709909 /* MainmenuScene.cpp */,
+				6E9BB04017E2A93400709909 /* MainmenuScene.h */,
+				6E43CBB217E6FFFB009F0D91 /* GamemodeScene.cpp */,
+				6E43CBB317E6FFFB009F0D91 /* GamemodeScene.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1523,9 +1536,29 @@
 			name = sound;
 			sourceTree = "<group>";
 		};
+		6E43CBA817E6FF1C009F0D91 /* mode */ = {
+			isa = PBXGroup;
+			children = (
+				6E43CBA917E6FF94009F0D91 /* btn_return.png */,
+				6E43CBAA17E6FF94009F0D91 /* mode_bg.png */,
+				6E43CBAB17E6FF94009F0D91 /* mode_star.png */,
+			);
+			name = mode;
+			sourceTree = "<group>";
+		};
+		6E43CBAF17E6FFA2009F0D91 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				6E43CBB017E6FFBA009F0D91 /* game_loadbg.png */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6E43CBAF17E6FFA2009F0D91 /* common */,
+				6E43CBA817E6FF1C009F0D91 /* mode */,
 				6E43CBA717E6FCFC009F0D91 /* sound */,
 				6E43CBA617E6FC4A009F0D91 /* start */,
 				6E43CBA517E6FC35009F0D91 /* icon */,
@@ -1619,6 +1652,10 @@
 				6E43CB9B17E6A1FC009F0D91 /* menu_sound.png in Resources */,
 				6E43CB9C17E6A1FC009F0D91 /* menu_start.png in Resources */,
 				6E43CBA317E6F076009F0D91 /* background.mp3 in Resources */,
+				6E43CBAC17E6FF94009F0D91 /* btn_return.png in Resources */,
+				6E43CBAD17E6FF94009F0D91 /* mode_bg.png in Resources */,
+				6E43CBAE17E6FF94009F0D91 /* mode_star.png in Resources */,
+				6E43CBB117E6FFBA009F0D91 /* game_loadbg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1814,6 +1851,7 @@
 				6E116EC317E1C1C20022B973 /* VisibleRect.cpp in Sources */,
 				6E9BB04117E2A93400709909 /* MainmenuScene.cpp in Sources */,
 				6E43CBA017E6B220009F0D91 /* Tools.cpp in Sources */,
+				6E43CBB417E6FFFB009F0D91 /* GamemodeScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
