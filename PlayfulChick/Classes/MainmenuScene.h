@@ -10,7 +10,6 @@
 #define __PlayfulChick__MainmenuScene__
 
 #include "cocos2d.h"
-
 USING_NS_CC;
 
 class MainmenuScene : public CCLayer
@@ -20,6 +19,10 @@ public:
     CREATE_FUNC(MainmenuScene);
     
     virtual bool init();
+    
+    void clickStartBtn(CCObject* pSender);
+    void clickSoundBtn(CCObject* pSender);
+    void clickExitBtn(CCObject* pSender);
 };
 
 #endif /* defined(__PlayfulChick__MainmenuScene__) */
