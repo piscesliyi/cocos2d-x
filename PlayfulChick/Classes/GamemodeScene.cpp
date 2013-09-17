@@ -54,7 +54,10 @@ bool GamemodeScene::init()
         num = (num > STAR_MAX) ? STAR_MAX : num;
         for (int j = 0; j < num; j++)
         {
-//            m_pGraphics.drawImage(m_imgModeStar, 111+41*j+268*i, 301);
+            CCSprite* star = CCSprite::create("mode_star.png");
+            star->setAnchorPoint(ccp(0, 1));
+            star->setPosition(Tools::getFinalPosition(ccp(111+41*j+268*i, 301)));
+            this->addChild(star);
         }
     }
     

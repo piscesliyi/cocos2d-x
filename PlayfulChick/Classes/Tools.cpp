@@ -15,5 +15,5 @@ int  Tools::m_iModeScores[3] = {0};
 
 CCPoint Tools::getFinalPosition(CCPoint point)
 {
-    return ccp(point.x, VisibleRect::top().y - point.y);
+    return ccp(VisibleRect::left().x + point.x, VisibleRect::top().y - point.y);
 }
