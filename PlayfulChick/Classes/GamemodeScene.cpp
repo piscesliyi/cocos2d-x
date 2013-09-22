@@ -12,6 +12,7 @@
 #include "Constant.h"
 #include "Tools.h"
 #include "MainmenuScene.h"
+#include "SimpleAudioEngine.h"
 
 CCScene* GamemodeScene::createScene()
 {
@@ -59,6 +60,8 @@ bool GamemodeScene::init()
             star->setPosition(Tools::getFinalPosition(ccp(111+41*j+268*i, 301)));
             this->addChild(star);
         }
+        //click rects
+        m_rectClick[i] = CCRectMake(MODE_SELECT_START_X + MODE_SELECT_OFFSET_X * i, MODE_SELECT_START_Y, MODE_SELECT_WIDTH, MODE_SELECT_HEIGHT);
     }
     
     //back button
@@ -84,4 +87,36 @@ void GamemodeScene::clickBackBtn(CCObject* pSender)
     CCScene* mainmenuScene = MainmenuScene::createScene();
     CCTransitionScene *trans = CCTransitionFade::create(1, mainmenuScene);
     CCDirector::sharedDirector()->replaceScene(trans);
+}
+
+bool GamemodeScene::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEvent)
+{
+    for (int i = 0; i < 3; i++)
+    {
+        if (m_rectClick[i].containsPoint(pTouch->getLocationInView()))
+        {
+            Tools::m_iNowMode = i;
+            if (Tools::m_bSoundOn)
+            {
+                CocosDenshion::SimpleAudioEngine::sharedEngine()->stopBackgroundMusic();
+            }
+            
+            
+            break;
+        }
+    }
+    
+    return true;
+}
+
+void GamemodeScene::onEnter()
+{
+    CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
+    CCLayer::onEnter();
+}
+
+void GamemodeScene::onExit()
+{
+    CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
+    CCLayer::onExit();
 }

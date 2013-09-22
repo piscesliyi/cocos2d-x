@@ -29,4 +29,10 @@
 #define STAR_LEVEL  100
 #define STAR_MAX    5
 
+#define MODE_SELECT_START_X     86
+#define MODE_SELECT_START_Y     124
+#define MODE_SELECT_OFFSET_X    267
+#define MODE_SELECT_WIDTH       247
+#define MODE_SELECT_HEIGHT      230
+
 #endif
