@@ -14,8 +14,11 @@ USING_NS_CC;
 
 class MainmenuScene : public CCLayer
 {
+private:
+    static bool m_bStart;
+    
 public:
-    static CCScene* createScene();
+    static CCScene* createScene(bool bStart);
     CREATE_FUNC(MainmenuScene);
     
     virtual bool init();

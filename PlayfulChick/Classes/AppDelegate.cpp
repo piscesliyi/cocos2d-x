@@ -30,7 +30,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     CCEGLView::sharedOpenGLView()->setDesignResolutionSize(DESIGN_WIDTH, DESIGN_HEIGHT, kResolutionFixedHeight);
 
     // create a scene. it's an autorelease object
-    CCScene *pScene = MainmenuScene::createScene();
+    CCScene *pScene = MainmenuScene::createScene(true);
 
     // run
     pDirector->runWithScene(pScene);

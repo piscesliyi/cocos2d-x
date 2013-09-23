@@ -84,7 +84,7 @@ bool GamemodeScene::init()
 
 void GamemodeScene::clickBackBtn(CCObject* pSender)
 {
-    CCScene* mainmenuScene = MainmenuScene::createScene();
+    CCScene* mainmenuScene = MainmenuScene::createScene(false);
     CCTransitionScene *trans = CCTransitionFade::create(1, mainmenuScene);
     CCDirector::sharedDirector()->replaceScene(trans);
 }

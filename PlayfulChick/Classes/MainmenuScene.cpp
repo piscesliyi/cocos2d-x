@@ -14,8 +14,11 @@
 #include "SimpleAudioEngine.h"
 #include "GamemodeScene.h"
 
-CCScene* MainmenuScene::createScene()
+bool MainmenuScene::m_bStart = true;
+
+CCScene* MainmenuScene::createScene(bool bStart)
 {
+    m_bStart = bStart;
     CCScene *scene = CCScene::create();
     
     MainmenuScene *layer = MainmenuScene::create();
@@ -62,7 +65,10 @@ bool MainmenuScene::init()
     soundBtn->setPosition(Tools::getFinalPosition(ccp(POS_SOUNDBTN_X, POS_SOUNDBTN_Y)));
     if (Tools::m_bSoundOn)
     {
-        CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("background.mp3", true);
+        if (m_bStart)
+        {
+            CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic("background.mp3", true);
+        }
     }
     else
     {
