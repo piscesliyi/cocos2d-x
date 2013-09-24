@@ -8,12 +8,6 @@
 
 #include "GamemodeScene.h"
 
-#include "VisibleRect.h"
-#include "Constant.h"
-#include "Tools.h"
-#include "MainmenuScene.h"
-#include "SimpleAudioEngine.h"
-
 CCScene* GamemodeScene::createScene()
 {
     CCScene *scene = CCScene::create();

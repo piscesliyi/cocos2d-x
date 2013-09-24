@@ -8,12 +8,6 @@
 
 #include "MainmenuScene.h"
 
-#include "Constant.h"
-#include "Tools.h"
-#include "VisibleRect.h"
-#include "SimpleAudioEngine.h"
-#include "GamemodeScene.h"
-
 bool MainmenuScene::m_bStart = true;
 
 CCScene* MainmenuScene::createScene(bool bStart)

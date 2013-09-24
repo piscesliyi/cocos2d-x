@@ -9,8 +9,7 @@
 #ifndef __PlayfulChick__Tools__
 #define __PlayfulChick__Tools__
 
-#include "cocos2d.h"
-USING_NS_CC;
+#include "Define.h"
 
 class Tools
 {

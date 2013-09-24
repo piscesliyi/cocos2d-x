@@ -9,8 +9,7 @@
 #ifndef __PlayfulChick__GamemodeScene__
 #define __PlayfulChick__GamemodeScene__
 
-#include "cocos2d.h"
-USING_NS_CC;
+#include "Define.h"
 
 class GamemodeScene : public CCLayer
 {

@@ -215,6 +215,10 @@
 		6E43CBB117E6FFBA009F0D91 /* game_loadbg.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E43CBB017E6FFBA009F0D91 /* game_loadbg.png */; };
 		6E43CBB417E6FFFB009F0D91 /* GamemodeScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E43CBB217E6FFFB009F0D91 /* GamemodeScene.cpp */; };
 		6E9BB04117E2A93400709909 /* MainmenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E9BB03F17E2A93400709909 /* MainmenuScene.cpp */; };
+		6EADF92717F16156008E33CC /* JumpScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EADF92517F16156008E33CC /* JumpScene.cpp */; };
+		6EADF92A17F16170008E33CC /* PaintScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EADF92817F16170008E33CC /* PaintScene.cpp */; };
+		6EADF92D17F16184008E33CC /* FlyScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EADF92B17F16184008E33CC /* FlyScene.cpp */; };
+		6EB01C7F17F13624008CCC84 /* LoadingScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6EB01C7D17F13624008CCC84 /* LoadingScene.cpp */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712461292920000B8313A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB212928DE900B8313A /* libxml2.dylib */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -664,6 +668,15 @@
 		6E43CBB317E6FFFB009F0D91 /* GamemodeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamemodeScene.h; path = ../Classes/GamemodeScene.h; sourceTree = "<group>"; };
 		6E9BB03F17E2A93400709909 /* MainmenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MainmenuScene.cpp; path = ../Classes/MainmenuScene.cpp; sourceTree = "<group>"; };
 		6E9BB04017E2A93400709909 /* MainmenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainmenuScene.h; path = ../Classes/MainmenuScene.h; sourceTree = "<group>"; };
+		6EADF92517F16156008E33CC /* JumpScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JumpScene.cpp; path = ../Classes/JumpScene.cpp; sourceTree = "<group>"; };
+		6EADF92617F16156008E33CC /* JumpScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JumpScene.h; path = ../Classes/JumpScene.h; sourceTree = "<group>"; };
+		6EADF92817F16170008E33CC /* PaintScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PaintScene.cpp; path = ../Classes/PaintScene.cpp; sourceTree = "<group>"; };
+		6EADF92917F16170008E33CC /* PaintScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PaintScene.h; path = ../Classes/PaintScene.h; sourceTree = "<group>"; };
+		6EADF92B17F16184008E33CC /* FlyScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FlyScene.cpp; path = ../Classes/FlyScene.cpp; sourceTree = "<group>"; };
+		6EADF92C17F16184008E33CC /* FlyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlyScene.h; path = ../Classes/FlyScene.h; sourceTree = "<group>"; };
+		6EADF92E17F16264008E33CC /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Define.h; path = ../Classes/Define.h; sourceTree = "<group>"; };
+		6EB01C7D17F13624008CCC84 /* LoadingScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LoadingScene.cpp; path = ../Classes/LoadingScene.cpp; sourceTree = "<group>"; };
+		6EB01C7E17F13624008CCC84 /* LoadingScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadingScene.h; path = ../Classes/LoadingScene.h; sourceTree = "<group>"; };
 		BF170DB012928DE900B8313A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BF170DB212928DE900B8313A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		BF170DB412928DE900B8313A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -1197,15 +1210,24 @@
 			children = (
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
+				6EADF92E17F16264008E33CC /* Define.h */,
+				6E116EC017E1C09C0022B973 /* Constant.h */,
 				6E116EC117E1C1C20022B973 /* VisibleRect.cpp */,
 				6E116EC217E1C1C20022B973 /* VisibleRect.h */,
-				6E116EC017E1C09C0022B973 /* Constant.h */,
 				6E43CB9E17E6B220009F0D91 /* Tools.cpp */,
 				6E43CB9F17E6B220009F0D91 /* Tools.h */,
 				6E9BB03F17E2A93400709909 /* MainmenuScene.cpp */,
 				6E9BB04017E2A93400709909 /* MainmenuScene.h */,
 				6E43CBB217E6FFFB009F0D91 /* GamemodeScene.cpp */,
 				6E43CBB317E6FFFB009F0D91 /* GamemodeScene.h */,
+				6EB01C7D17F13624008CCC84 /* LoadingScene.cpp */,
+				6EB01C7E17F13624008CCC84 /* LoadingScene.h */,
+				6EADF92517F16156008E33CC /* JumpScene.cpp */,
+				6EADF92617F16156008E33CC /* JumpScene.h */,
+				6EADF92817F16170008E33CC /* PaintScene.cpp */,
+				6EADF92917F16170008E33CC /* PaintScene.h */,
+				6EADF92B17F16184008E33CC /* FlyScene.cpp */,
+				6EADF92C17F16184008E33CC /* FlyScene.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -1764,6 +1786,7 @@
 				15A3DA421682F826002FB0C5 /* CCNode+CCBRelativePositioning.cpp in Sources */,
 				15A3DA431682F826002FB0C5 /* CCNodeLoader.cpp in Sources */,
 				15A3DA441682F826002FB0C5 /* CCNodeLoaderLibrary.cpp in Sources */,
+				6EADF92D17F16184008E33CC /* FlyScene.cpp in Sources */,
 				15A3DA451682F826002FB0C5 /* CCParticleSystemQuadLoader.cpp in Sources */,
 				15A3DA461682F826002FB0C5 /* CCScale9SpriteLoader.cpp in Sources */,
 				15A3DA471682F826002FB0C5 /* CCScrollViewLoader.cpp in Sources */,
@@ -1834,6 +1857,7 @@
 				1A9CE8821765A12C000E3062 /* CCDisplayManager.cpp in Sources */,
 				1A9CE8831765A12C000E3062 /* CCShaderNode.cpp in Sources */,
 				1A9CE8841765A12C000E3062 /* CCSkin.cpp in Sources */,
+				6EADF92717F16156008E33CC /* JumpScene.cpp in Sources */,
 				1A9CE8851765A12C000E3062 /* CCTexture2DMutable.cpp in Sources */,
 				1A9CE8861765A12C000E3062 /* GLES-Render.cpp in Sources */,
 				1A9CE8871765A12C000E3062 /* CSContentJsonDictionary.cpp in Sources */,
@@ -1852,10 +1876,12 @@
 				1A9CE8981765A12C000E3062 /* CCComAudio.cpp in Sources */,
 				1A9CE8991765A12C000E3062 /* CCComController.cpp in Sources */,
 				1A9CE89A1765A12C000E3062 /* CCInputDelegate.cpp in Sources */,
+				6EADF92A17F16170008E33CC /* PaintScene.cpp in Sources */,
 				6E116EC317E1C1C20022B973 /* VisibleRect.cpp in Sources */,
 				6E9BB04117E2A93400709909 /* MainmenuScene.cpp in Sources */,
 				6E43CBA017E6B220009F0D91 /* Tools.cpp in Sources */,
 				6E43CBB417E6FFFB009F0D91 /* GamemodeScene.cpp in Sources */,
+				6EB01C7F17F13624008CCC84 /* LoadingScene.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

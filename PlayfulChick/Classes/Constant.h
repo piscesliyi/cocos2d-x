@@ -35,4 +35,6 @@
 #define MODE_SELECT_WIDTH       247
 #define MODE_SELECT_HEIGHT      230
 
+#define LOADING_BEGIN_TIME  0.5
+
 #endif
